@@ -75,7 +75,7 @@ static const struct arg args[] = {
 	//{disk_free, " [ FREE: %s]", 	"/"},
 	{cpu_perc, " [CPU: %s%%]",     	NULL},
 	{ram_used, " [RAM: %s]",     	NULL},
-	{ram_used, " [RAM: %s]",     	NULL},
+	{disk_free, " [FREE: %s]",     	"/home"},
         //{battery_perc, "[BAT: %s%%]",  "BAT0"},
 	/*{ run_command, "[VOL: %s]", "amixer sget Master | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'" },*/
 	{ datetime, " %s",           	"%a %B %d %Y %I:%M %p" },
