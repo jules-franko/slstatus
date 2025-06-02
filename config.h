@@ -69,10 +69,14 @@ static const struct arg args[] = {
 	{hostname, "%s] ", NULL},
 	{ipv4, "[%s", "wlo1"},
 	{wifi_perc, ":%s%%] ", 	"wlo1"},*/
-	{disk_free, " [FREE: %s] ", 	"/"},
-	{cpu_perc, "[CPU: %s%%] ",     	NULL},
-	{ram_used, "[RAM: %s] ",     	NULL},
-        {battery_perc, "[BAT: %s%%] ",  "BAT0"},
-	/*{ run_command, "[VOL: %s] ", "amixer sget Master | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'" },*/
-	{ datetime, "%s",           	"%a %B %d %Y %I:%M %p" },
+	{ run_command, " [%s] ", "mpc current | cut -c -40"},
+	//{disk_free, " [ FREE: %s]", 	"/"},
+	//{cpu_perc, " [ CPU: %s%%]",     	NULL},
+	//{disk_free, " [ FREE: %s]", 	"/"},
+	{cpu_perc, " [CPU: %s%%]",     	NULL},
+	{ram_used, " [RAM: %s]",     	NULL},
+	{ram_used, " [RAM: %s]",     	NULL},
+        //{battery_perc, "[BAT: %s%%]",  "BAT0"},
+	/*{ run_command, "[VOL: %s]", "amixer sget Master | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'" },*/
+	{ datetime, " %s",           	"%a %B %d %Y %I:%M %p" },
 };
