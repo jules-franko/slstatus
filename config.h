@@ -70,6 +70,7 @@ static const struct arg args[] = {
 	{ipv4, "[%s", "wlo1"},
 	{wifi_perc, ":%s%%] ", 	"wlo1"},*/
 	{ run_command, " [%s] ", "mpc current | cut -c -40"},
+	{ run_command, " [VOL: %s]", "$HOME/.scripts/getvolume"},
 	//{disk_free, " [ FREE: %s]", 	"/"},
 	//{cpu_perc, " [ CPU: %s%%]",     	NULL},
 	//{disk_free, " [ FREE: %s]", 	"/"},
